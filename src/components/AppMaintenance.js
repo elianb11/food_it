@@ -1,5 +1,5 @@
-import logo from './logo.svg';
-import logo_text from './logo_text.png'
+import logo from './ressources/logo.svg';
+import logo_text from './ressources/logo_text.png'
 import './AppMaintenance.css';
 
 function AppMaintenance() {
