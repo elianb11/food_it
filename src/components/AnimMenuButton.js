@@ -1,11 +1,10 @@
 import './AnimMenuButton.css'
 import React from 'react'
 
-function AnimMenuButton() {
+function AnimMenuButton({isMenuOpen, setIsMenuOpen}) {
     const [anim, setAnim] = React.useState(0);
-    const [isMenuOpen, setIsMenuOpen] = React.useState(0);
     const handleOnClick = () => {
-        if (isMenuOpen == 0) {
+        if (isMenuOpen === 0) {
             setIsMenuOpen(1);
             setAnim(1);
         }

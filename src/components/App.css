@@ -5,12 +5,14 @@
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
+    min-width: 100vw;
 }
 
 .App-body {
     text-align: center;
     color: #132a13;
     font-size: calc(10px + 2vmin);
+    z-index: 1;
 }
 
 .App-logo {

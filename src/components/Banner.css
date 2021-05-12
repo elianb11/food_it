@@ -1,6 +1,6 @@
 .Banner {
-    background-color:RGBA(79,119,45,0.52);
-    min-height: 8vh;
+    background-color:#95ad80;
+    min-height: 7vh;
     min-width: 100vw;
     display: flex;
     justify-content: left;
@@ -8,20 +8,62 @@
     align-items: center;
     font-size: calc(10px + 2vmin);
     color: #132a13;
-    padding-left: 8vh;
+    position: relative;
+    z-index: 2;
 }
 
-.sep_head {
+.Separator {
     width: 0.2vh;
     height: 5vh;
     background: #e1e8db;
-    margin-right: 4vh;
-    margin-left: 4vh;
 }
 
 .Banner-logo {
-    height: 4vh;
+    height: 3.5vh;
     margin-top: 0.7vh;
-    align-self: center;
+    margin-left: 3vh;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.burger{
+    margin-left: 1vh;
+    margin-right: 3vh;
+}
+
+.Search-input {
+    width: 65.5%;
+    transform: translateY(-3px);
+    margin-right: 4vh;
+}
+
+.Connexion-button {
+    background-color: #142c14;
+    min-width: 190px;
+    border: none;
+    border-radius: 10px;
+    color: #e1e8db;
+    padding: 12px 26px;
+    text-align: center;
+    opacity: 0.6;
+    margin-left: 3.5vh;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.67em;
+    font-weight: bold;
+}
+
+.Connexion-button:hover {
+    animation: Connexion-button-hover 0.2s linear forwards;
+    cursor:pointer; 
+    opacity: 1;
+}
+
+@keyframes Connexion-button-hover{
+    from{
+        opacity: 0.6;
+    }
+    to {
+        opacity: 1;
+        box-shadow: 0 6px 10px 0 rgba(0,0,0,0.24), 0 12px 25px 0 rgba(0,0,0,0.19);
+    }
 }
