@@ -44,25 +44,25 @@
 
 .menusticks[isMenuOpen='0'] {
     align-self: center;
-    height: 0.5vh;
+    height: 5px;
 }
 
 #middlestick[isMenuOpen='0'] {
     width: 4.5vh;
-    background: #132a13;
+    background: #6b45bc;
 }
 
 #upperstick[isMenuOpen='0'] {
     width: 4vh;
     margin-bottom: 0.8vh;
-    background: rgba(19, 42, 19, 0.52);
+    background: #bbb1e3;
     
 }
 
 #bottomstick[isMenuOpen='0'] {
     width: 4vh;
     margin-top: 0.8vh;
-    background: rgba(19, 42, 19, 0.52);
+    background: #bbb1e3;
 }
 
 .menusticks[isMenuOpen='1'] {
@@ -73,21 +73,21 @@
 
 #middlestick[isMenuOpen='1'] {
     width: 4.5vh;
-    background: #132a13;
+    background: #6b45bc;
     transform: rotate(45deg);
 }
 
 #upperstick[isMenuOpen='1'] {
     width: 4vh;
     margin-bottom: 0.8vh;
-    background: rgba(19, 42, 19, 0.52);
+    background: #6b45bc;
     transform: translate(0px, 1.3vh) rotate(-45deg) scale(1.222, 1);
 }
 
 #bottomstick[isMenuOpen='1'] {
     width: 4vh;
     margin-top: 0.8vh;
-    background: rgba(19, 42, 19, 0.52);
+    background: #6b45bc;
     transform: translate(0px, -1.3vh) rotate(-45deg) scale(1.222, 1);
 }
 

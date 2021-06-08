@@ -1,25 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 .MenuBox {
     display: flex;
     flex-direction: column;
-    min-width: 100vw;
-    position: absolute;
+    min-width: 99.1vw;
+    position: fixed;
     top: 7vh;
     left: 0;
     z-index: 1;
+    animation: MenuBox-anim 0.7s forwards;
 }
 
 .MenuBox-menu {
-    background-color: #95ad80;
+    background-color: #ffffff;
     display: flex;
     justify-content: flex-start;
-    flex-direction: column;
-    align-items: center;
+    flex-direction:row;
     min-height: 52vh;
+    max-height: 52vh;
     filter: drop-shadow(0px 7px 7px rgb(109, 109, 109));
+}
+
+.Panel {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 30px 0px 0px 50px;
+    min-width: 45vh;
+}
+
+.Panel p {
+    color: #6b45bc;
+    font-weight: 600;
+    font-size: 0.70em;
+    margin-bottom: 20px;
+}
+
+.Panel ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #6b45bc;
+    font-weight: 600;
+    font-size: 0.70em;
+}
+
+.Panel li {
+    list-style-type: none;
+    color: #000000;
+    font-weight:normal;
+    margin-bottom: 14px;
+    font-size: 0.85em;
+}
+
+.Panel li:hover {
+    color: #6b45bc;
+    cursor: pointer;
 }
 
 .OpacityBox {
     min-height: 41vh;
     background-color: black;
     opacity: 0.4;
+}
+
+.Panel-separator {
+    width: 0.2vh;
+    margin-top: 4vh;
+    height: 42vh;
+    background: #ececec;
+}
+
+@keyframes MenuBox-anim {
+    from {transform: translateY(-2.5vh);
+        opacity: 0;
+    }
+    to {transform: translateY(0vh);
+        opacity: 1;
+    }
 }

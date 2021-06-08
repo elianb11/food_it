@@ -1,19 +1,27 @@
-import logo from './ressources/logo_text.png'
+import logo from './ressources/logo_text.svg'
 import burgerLogo from './ressources/logo.svg'
 import './Banner.css'
 import AnimMenuButton from './AnimMenuButton'
 import {SearchInput} from 'evergreen-ui'
 import {PersonIcon} from 'evergreen-ui'
 import React from 'react';
+import {useHistory} from 'react-router-dom'
 
 function Banner({isMenuOpen, setIsMenuOpen}) {
+    let history = useHistory();
+
+    function handleClick() {
+        history.push("/");
+    }
+
     return(
         <div className="Banner">
             <AnimMenuButton isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen}/>
             <div className="Separator" />
-            <img src={logo} className="Banner-logo" alt="logo" />
-            <img src={burgerLogo} className="Banner-logo burger" alt="logo" />
-
+            <div onClick={handleClick}>
+                <img src={logo} className="Banner-logo" alt="logo" />
+                <img src={burgerLogo} className="Banner-logo burger" alt="logo" />
+            </div>
             <div className="Search-input">
                 <SearchInput placeholder="Je cherche..." width="100%" height={40}/>
             </div>

@@ -1,0 +1,12 @@
+#a5bc95 vert très clair fromage
+#5c6c4c vert moyen steak
+#142c14 vert foncé pain
+#8c9b7c vert très clair fromage
+#84947c vert très clair fromage
+
+#ffba09 yellow
+#bbb1e3	violet clair
+#6b45bc	violet foncé
+
+apikey spoonacular
+0a04a7d86e2642519f39e632d4896e9d

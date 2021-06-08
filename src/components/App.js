@@ -1,29 +1,20 @@
-import logo from './ressources/logo.svg';
 import './App.css';
-import Banner from './Banner';
-import MenuBox from './MenuBox';
+import Home from './Home'
+import Calculator from './Calculator'
+import ResultPage from './ResultPage'
 import React from 'react'
+import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 
 function App() {
-
-    const [isMenuOpen, setIsMenuOpen] = React.useState(0);
-
+    
     return (
-        <div className="App">
-            <header>
-                <Banner isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen}/>
-            </header>
-            <body className="App-body">
-                <MenuBox isMenuOpen={isMenuOpen}/>
-                <img src={logo} className="App-logo" alt="logo" />
-                <p>
-                    Notre site est actuellement en maintenance !
-                </p>
-                <p>
-                    Merci pour votre compréhension.
-                </p>
-            </body>
-        </div>
+        <Router>
+            <Switch>
+                <Route exact path="/" component={Home}/>
+                <Route exact path="/calculator" component={Calculator}/>
+                <Route exact path="/results" component={ResultPage}/>
+            </Switch>
+        </Router>
     );
 }
 
