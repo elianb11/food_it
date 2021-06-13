@@ -8,6 +8,7 @@
     flex-direction: column;
     min-width: 99.1vw;
     position: fixed;
+    font-size: calc(10px + 2vmin);
     top: 7vh;
     left: 0;
     z-index: 1;
@@ -56,6 +57,15 @@
     font-size: 0.85em;
 }
 
+.Panel li span{
+    font-weight: bold;
+}
+
+.Panel li span:hover{
+    color:#000000;
+    cursor: default;
+}
+
 .Panel li:hover {
     color: #6b45bc;
     cursor: pointer;
@@ -81,4 +91,9 @@
     to {transform: translateY(0vh);
         opacity: 1;
     }
+}
+
+.Recherche {
+    padding: 10px;
+    cursor: pointer;
 }

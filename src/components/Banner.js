@@ -14,6 +14,14 @@ function Banner({isMenuOpen, setIsMenuOpen}) {
         history.push("/");
     }
 
+    const [searchValue, setSearchValue] = React.useState("")
+
+    function handleKeyDown(e) {
+        if(e.key === 'Enter' && searchValue != ""){
+            history.push("/results",{params:"search.php?s="+searchValue});
+        }
+    }
+
     return(
         <div className="Banner">
             <AnimMenuButton isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen}/>
@@ -23,10 +31,20 @@ function Banner({isMenuOpen, setIsMenuOpen}) {
                 <img src={burgerLogo} className="Banner-logo burger" alt="logo" />
             </div>
             <div className="Search-input">
-                <SearchInput placeholder="Je cherche..." width="100%" height={40}/>
+                <SearchInput 
+                    placeholder="Je cherche..." 
+                    width="100%" 
+                    height={40}
+                    value={searchValue}
+                    onChange={e => setSearchValue(e.target.value)}
+                    onKeyDown={e => handleKeyDown(e)}
+                    />
             </div>
             <div className="Separator" />
-            <button className="Connexion-button">
+            <button 
+            className="Connexion-button"
+            onClick={() => {history.push("/login")}}
+            >
                 <PersonIcon marginRight={10} size={15}/>
                 Connexion
             </button>
