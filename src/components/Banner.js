@@ -26,7 +26,7 @@ function Banner({isMenuOpen, setIsMenuOpen}) {
         <div className="Banner">
             <AnimMenuButton isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen}/>
             <div className="Separator" />
-            <div onClick={handleClick}>
+            <div className="logo" onClick={handleClick}>
                 <img src={logo} className="Banner-logo" alt="logo" />
                 <img src={burgerLogo} className="Banner-logo burger" alt="logo" />
             </div>
@@ -45,7 +45,7 @@ function Banner({isMenuOpen, setIsMenuOpen}) {
             className="Connexion-button"
             onClick={() => {history.push("/login")}}
             >
-                <PersonIcon marginRight={10} size={15}/>
+                <PersonIcon marginRight={10} className="PersonIcon"/>
                 Connexion
             </button>
         </div>

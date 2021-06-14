@@ -64,6 +64,7 @@ export default function Home() {
                             Trouvez votre <span className="purple">Recette Idéale</span><br/>
                             En <span className="yellow">Quelques Clics</span> seulement !
                         </h1>
+                        <p className="label">Remplissez ce formulaire pour personnaliser la recherche :</p>
                         <Formulaire
                         sexe={sexe} setSexe={setSexe}
                         taille={taille} setTaille={setTaille}

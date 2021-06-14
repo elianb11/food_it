@@ -4,46 +4,92 @@
     list-style-type: none;
 }
 
-.Formulaire {
-    margin-top: 8vh;
-    font-size: 0.85em;
-    font-weight: 500;
+@media screen and (max-width: 890px) {
+    .Formulaire {
+        margin-top: 4vh;
+        font-size: 0.85em;
+        font-weight: 500;
+    }
+    
+    .Formulaire li {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        margin: 30px 0;
+        background-color: rgb(255, 255, 255);
+        padding: 20px;
+        border-radius: 20px;
+        min-height: 15vh;
+        box-sizing: border-box;
+        box-shadow: 0 6px 10px 0 rgba(0,0,0,0.24);
+    }
+
+    .Label {
+        margin-bottom: 2vh;
+    }
+    
+    .Formulaire li p {
+        font-size: 0.9em;
+        font-weight: 400;
+    }
+    
+    .RadioGroup {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        transform: translateY(-5px);
+    }
+    
+    .Formulaire li input {
+        width: 8vh;
+        font-size: 0.7em;
+        padding: 0 0 0 10px;
+    }
 }
 
-.Formulaire li {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    margin: 30px 0px;
-    background-color: white;
-    padding: 20px;
-    border-radius: 20px;
-    height: 8vh;
-    box-sizing: border-box;
-    box-shadow: 0 6px 10px 0 rgba(0,0,0,0.24);
-}
-
-.Label {
-    min-width: 33vh;
-}
-
-.Formulaire li p {
-    font-size: 0.9em;
-    font-weight: 400;
-}
-
-.RadioGroup {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 35vh;
-    transform: translateY(-5px);
-}
-
-.Formulaire li input {
-    width: 8vh;
-    margin: 0 15px;
-    font-size: 0.7em;
-    padding: 0 0 0 10px;
+@media screen and (min-width: 890px) {
+    .Formulaire {
+        margin-top: 4vh;
+        font-size: 0.85em;
+        font-weight: 500;
+    }
+    
+    .Formulaire li {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin: 30px 0px;
+        background-color: white;
+        padding: 20px;
+        border-radius: 20px;
+        height: 8vh;
+        box-sizing: border-box;
+        box-shadow: 0 6px 10px 0 rgba(0,0,0,0.24);
+    }
+    
+    .Label {
+        min-width: 33vh;
+    }
+    
+    .Formulaire li p {
+        font-size: 0.9em;
+        font-weight: 400;
+    }
+    
+    .RadioGroup {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 35vh;
+        transform: translateY(-5px);
+    }
+    
+    .Formulaire li input {
+        width: 8vh;
+        margin: 0 15px;
+        font-size: 0.7em;
+        padding: 0 0 0 10px;
+    }
 }
 
