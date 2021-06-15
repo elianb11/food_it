@@ -8,7 +8,7 @@
     display: flex;
     flex-wrap: wrap;
     min-height: 100vh;
-    max-width: 73vw;
+    max-width: 150vh;
     margin: auto;
 }
 
@@ -18,7 +18,7 @@
     align-items: center;
     background-color: white;
     padding: 4vh 0;
-    width:70vh;
+    width:65vh;
     border-radius: 20px;
     margin: 2vh;
     color: #132a13;

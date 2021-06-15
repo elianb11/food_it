@@ -16,8 +16,6 @@
     color: #132a13;
     font-size: calc(10px + 2vmin);
     z-index: 1;
-    padding-left: 10vh;
-    padding-right: 10vh;
     box-sizing: border-box;
     margin-top: 11vh;
 }
