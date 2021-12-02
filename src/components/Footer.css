@@ -99,11 +99,3 @@
 .infos_hover:hover {
     cursor: pointer;
 }
-
-.SocialMedia {
-    display: flex;
-    min-width: 40vh;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-bottom: 2vh;
-}
